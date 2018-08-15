@@ -1,7 +1,7 @@
 # Site settings
 title: 蓝with黑 Blog
 SEOTitle: 翁凡的博客 | wenngfan Blog
-header-img: img/post-bg-desk.jpg
+header-img: img/namucuo.jpeg
 email: fan1130work@163.com
 description: "Every failure is leading towards success."
 keyword: "翁凡的博客, baggiomygod, 前端, vue, react, angular, pwa, javascript, typescript"
@@ -12,7 +12,7 @@ github_repo: "https://github.com/baggiomygod" # you code repository
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "...!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/wengfan.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
