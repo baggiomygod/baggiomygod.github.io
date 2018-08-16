@@ -46,72 +46,69 @@ x = ['sss', 12] // ok
 x = [10, 'ss'] // error
 ```
 
-
-    当访问一个越界的元素，会使用联合类型替代
-    ```
-x[3] = 'world'
-console.log(x[5].toString())
-    ```
+当访问一个越界的元素，会使用联合类型替代
+```
+    x[3] = 'world'
+    console.log(x[5].toString())
+```
 
 ### 枚举
-    enum类型是对js标准数据类型的一个补充，使用枚举类型可以为一组数值赋予友好的名字
-    ```
-enum Color {Red, Green, Blue}
-let c: Color = Color.Green
-    ```
+enum类型是对js标准数据类型的一个补充，使用枚举类型可以为一组数值赋予友好的名字
+```
+    enum Color {Red, Green, Blue}
+    let c: Color = Color.Green
+```
 
-    默认情况下，从0开始为元素编号。你也可以手动的指定成员的数值。
-    ```
-enum Color {Red = 1, Green, Blue}
-let c: Color = Color.Green
-console.log(c) // 2
-    ```
-    或者，全部都采用手动赋值
-    ```
-enum Color {Red = 1, Green = 3, Blue = 5}
-let c: Color = Color.Green
-console.log(c) // 3
-    ```
+默认情况下，从0开始为元素编号。你也可以手动的指定成员的数值。
+```
+    enum Color {Red = 1, Green, Blue}
+    let c: Color = Color.Green
+    console.log(c) // 2
+```
+或者，全部都采用手动赋值
+```
+    enum Color {Red = 1, Green = 3, Blue = 5}
+    let c: Color = Color.Green
+    console.log(c) // 3
+```
 
-    枚举类型提供的一个便利是你可以由枚举的值得到它的名字
-    ```
-enum Color {Red = 1, Green, Blue}
-let colorName: string = Coloe[2]
+枚举类型提供的一个便利是你可以由枚举的值得到它的名字
+```
+    enum Color {Red = 1, Green, Blue}
+    let colorName: string = Coloe[2]
 
-console.log(colorName) // Green
-    ```
+    console.log(colorName) // Green
+```
 
     Any
     有时候，我们想为哪些编程阶段还不清楚类型的变量指定一个类型。这些值可能来自于动态的内容，比如来自用户输入或第三方代码库。这种情况下，我们不希望类型检查器对这些值进行检查而是直接让他们通过编译阶段的价差。
-    ```
-let notSure: any = 4
-notSure = 'sss'
-notSure = false
-    ```
+```
+    let notSure: any = 4
+    notSure = 'sss'
+    notSure = false
+```
 
-    当你只知道一部分数据类型时：
-    ```
-let list = any[] = [1, false, 'sss']
+当你只知道一部分数据类型时：
+```
+    let list = any[] = [1, false, 'sss']
+    list[1] = 100
+```
 
-list[1] = 100
-    ```
+Void  没有任何类型
+某种程度上说，void类型像是与any类型相反，它表示没有任何类型。当一个函数没有返回值时，你通常会见到其返回值类型时void
+```
+    function warnUser(): void {
+    alert('sss')
+    }
+```
 
-    Void  没有任何类型
-    某种程度上说，void类型像是与any类型相反，它表示没有任何类型。当一个函数没有返回值时，你通常会见到其返回值类型时void
-    ```
-function warnUser(): void {
-alert('sss')
-}
-    ```
+Null & undefined
+typescript里，undefined和null两者各有自己的类型undefined, null.
+```
+    let u:  undefined = undefined
+    let n: null = unll
+```
 
-    Null & undefined
-
-    typescript里，undefined和null两者各有自己的类型undefined, null.
-
-    ```
-let u:  undefined = undefined
-let n: null = unll
-    ```
 > 默认情况下null和undefined是所有类型的子类型。就是说你可以把null,undefined赋值给number类型的变量
 
      当你指定--strictNullChecks标记，null和undefined只能赋值给void和他么各自。
@@ -121,27 +118,27 @@ let n: null = unll
 > 注意: 我们鼓励尽可能地使用 --strictNullChecks
 
 ### Never
-    never 类型表示的时哪些用不存在的值得类型。
-    例如， naver类型时哪些**总是会抛出异常或根本就不会有返回值的函数表达式** 或 **箭头函数表达式的返回值类型**；变量也可能是never类型，当它们被永不为真的类型保护所约束时
+never 类型表示的时哪些用不存在的值得类型。
+例如， naver类型时哪些**总是会抛出异常或根本就不会有返回值的函数表达式** 或 **箭头函数表达式的返回值类型**；变量也可能是never类型，当它们被永不为真的类型保护所约束时
 
-    never类型是任何类型的子类型，也可以赋值给任何类型，
+never类型是任何类型的子类型，也可以赋值给任何类型，
 ```
 // 返回never的函数必须存在无法达到的终点
-function error(message: string): never {
-    throw new Error(message)
-}
-
-// 推断的返回值类型为 never
-function fail() {
-    return error('sss')
-}
-
-// 返回never的函数必须存在不发到达的终点
-function infiniteLoop(): never {
-    while (true) {
-
+    function error(message: string): never {
+        throw new Error(message)
     }
-}
+
+    // 推断的返回值类型为 never
+    function fail() {
+        return error('sss')
+    }
+
+    // 返回never的函数必须存在不发到达的终点
+    function infiniteLoop(): never {
+        while (true) {
+
+        }
+    }
 ```
 
 ### 类型断言
