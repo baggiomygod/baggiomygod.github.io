@@ -11,21 +11,21 @@ tags:
     - 学习笔记
 ---
 # typescript 之基础类型
-    ### 布尔
+### 布尔
         ```
             let isDone: boolean = false
         ```
-    ### 数字
+### 数字
         ```
             let num:number = 123
             let num:number = 0xf00d
         ```
-    ### 字符串类型
+### 字符串类型
         ```
             let str:string = 'ss'
         ```
 
-    ### 数组
+### 数组
         ```
             // number类型的数组
             let list: number[] = [1,2,3]
@@ -33,7 +33,7 @@ tags:
             // 数组泛型
             let list: Arrat<number> = [12,3,4]
         ```
-    ### 元组Tuple
+### 元组Tuple
         元组类型允许表示一个已知元素数量和类型的数组，各个元素的类型不必相同。
         ```
             // Declare a tuple type 生命一个元组类型
@@ -49,7 +49,7 @@ tags:
         console.log(x[5].toString())
     ```
 
-    ### 枚举
+### 枚举
     enum类型是对js标准数据类型的一个补充，使用枚举类型可以为一组数值赋予友好的名字
     ```
         enum Color {Red, Green, Blue}
@@ -108,13 +108,13 @@ tags:
         let u:  undefined = undefined
         let n: null = unll
     ```
-    > 默认情况下null和undefined是所有类型的子类型。就是说你可以把null,undefined赋值给number类型的变量
+> 默认情况下null和undefined是所有类型的子类型。就是说你可以把null,undefined赋值给number类型的变量
 
      当你指定--strictNullChecks标记，null和undefined只能赋值给void和他么各自。
      这能避免很多常见的问题。
      也许在某处你想传入一个string，null 或 undefined ，你可以使用联合类型 string | null | undefined
 
-    > 注意: 我们鼓励尽可能地使用 --strictNullChecks
+> 注意: 我们鼓励尽可能地使用 --strictNullChecks
 
 ### Never
     never 类型表示的时哪些用不存在的值得类型。
@@ -140,7 +140,7 @@ tags:
             }
         ```
 
-    ### 类型断言
+### 类型断言
 
         有时候你会遇到这样的情况，你会比typescript更了解某个值得详细信息。通常这会发生在你清楚地知道一个实体具有比它现有类型更确切的类型
 
