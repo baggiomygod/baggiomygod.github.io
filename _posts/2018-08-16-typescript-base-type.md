@@ -11,7 +11,7 @@ tags:
     - 学习笔记
 ---
 
-# typescript 之基础类型
+## typescript 之基础类型
 
 ### 布尔
 ```
