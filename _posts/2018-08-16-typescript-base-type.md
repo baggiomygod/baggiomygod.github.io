@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      typescript之基础类型
-subtitle:   
+subtitle:   官方文档
 date:       2018-8-16
 author:     wengfan
 header-img: img/post-bg-debug.png
@@ -37,6 +37,7 @@ let list: string[] = ['a','b','c']
 // 数组泛型
 let list: Arrat<number> = [12,3,4]
 ```
+
 ### 元组Tuple
 元组类型允许表示一个已知元素数量和类型的数组，各个元素的类型不必相同。
 ```
@@ -52,8 +53,10 @@ x = [10, 'ss'] // error
     console.log(x[5].toString())
 ```
 
-### 枚举
+
+### 枚举enum
 enum类型是对js标准数据类型的一个补充，使用枚举类型可以为一组数值赋予友好的名字
+
 ```
     enum Color {Red, Green, Blue}
     let c: Color = Color.Green
@@ -80,7 +83,7 @@ enum类型是对js标准数据类型的一个补充，使用枚举类型可以�
     console.log(colorName) // Green
 ```
 
-    Any
+### Any
     有时候，我们想为哪些编程阶段还不清楚类型的变量指定一个类型。这些值可能来自于动态的内容，比如来自用户输入或第三方代码库。这种情况下，我们不希望类型检查器对这些值进行检查而是直接让他们通过编译阶段的价差。
 ```
     let notSure: any = 4
@@ -94,7 +97,7 @@ enum类型是对js标准数据类型的一个补充，使用枚举类型可以�
     list[1] = 100
 ```
 
-Void  没有任何类型
+### Void  没有任何类型
 某种程度上说，void类型像是与any类型相反，它表示没有任何类型。当一个函数没有返回值时，你通常会见到其返回值类型时void
 ```
     function warnUser(): void {
@@ -102,7 +105,7 @@ Void  没有任何类型
     }
 ```
 
-Null & undefined
+### Null & undefined
 typescript里，undefined和null两者各有自己的类型undefined, null.
 ```
     let u:  undefined = undefined
@@ -119,7 +122,7 @@ typescript里，undefined和null两者各有自己的类型undefined, null.
 
 ### Never
 never 类型表示的时哪些用不存在的值得类型。
-例如， naver类型时哪些**总是会抛出异常或根本就不会有返回值的函数表达式** 或 **箭头函数表达式的返回值类型**；变量也可能是never类型，当它们被永不为真的类型保护所约束时
+例如， naver类型时哪些 **总是会抛出异常或根本就不会有返回值的函数表达式** 或 **箭头函数表达式的返回值类型**；变量也可能是never类型，当它们被永不为真的类型保护所约束时
 
 never类型是任何类型的子类型，也可以赋值给任何类型，
 ```
