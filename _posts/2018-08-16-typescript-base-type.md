@@ -10,7 +10,7 @@ tags:
     - typescript
     - 学习笔记
 ---
-# 基础类型
+# typescript 之基础类型
     ### 布尔
         ```
             let isDone: boolean = false
