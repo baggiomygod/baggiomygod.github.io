@@ -1,3 +1,15 @@
+---
+layout:     post
+title:      linux (centos)安装部署nginx
+subtitle:   linux系统安装nginx
+date:       2018-8-16
+author:     wengfan
+header-img: img/post-bg-keybord.jpg
+catalog: true
+tags:
+    - nginx
+    - centos
+---
 ### linux (centos)安装部署nginx
 ### 1. 背景
 今年加入的新公司之前没有前后端分离的项目，我也在入职后在参与的第一个项目中推动了公司的第一个前后端分离项目。因为前后端分离，前端代码的部署需要用到ngnix。由于之前并没有使用nginx的经验，所以这次部署过程中，根据网络上搜到的资料，将不走一步一步记录下来，最终完成部署。现在，将他写成笔记，供后续查阅，也希望给有和我一样需求的ngnix小白带来一点帮助。
