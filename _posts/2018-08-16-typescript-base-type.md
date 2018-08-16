@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      linux (centos)安装部署nginx
-subtitle:   linux系统安装nginx
+title:      typescript之基础类型
+subtitle:   
 date:       2018-8-16
 author:     wengfan
 header-img: img/post-bg-debug.png
