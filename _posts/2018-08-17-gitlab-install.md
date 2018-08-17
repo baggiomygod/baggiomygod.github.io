@@ -13,7 +13,7 @@ tags:
 # gitlab部署(centos)
 今天在公司内网部署了gitlab，为前端团队管理前端代码，基本是按官网的操作，同时记录下遇到的问题。
 
-1. 安装和配置需要的依赖 install and configure the necessary dependencies
+### 1. 安装和配置需要的依赖 install and configure the necessary dependencies
 
 - 在centOs6，以下命令将在系统防火墙中打开http和ssh访问
 
@@ -40,7 +40,7 @@ tags:
     sudo chkconfig postfix on
 ```
 
-2. 添加包gitlab软件包并安装
+### 2. 添加包gitlab软件包并安装
 
 ```
     curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash
@@ -59,7 +59,7 @@ tags:
 ```
     curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash
 ```
-3. 安装gitlab包，并设置你要访问的url
+### 3. 安装gitlab包，并设置你要访问的url
 
 ```
     // gitlab.example.com 改为你要访问的地址
@@ -67,4 +67,4 @@ tags:
     sudo EXTERNAL_URL="http://gitlab.example.com" yum -y install gitlab-ee
 ```
 
-4. 访问http://gitlab.example.com，然后就可以注册使用了
+### 4. 访问http://gitlab.example.com，然后就可以注册使用了
