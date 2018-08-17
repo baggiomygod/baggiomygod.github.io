@@ -67,4 +67,4 @@ tags:
     sudo EXTERNAL_URL="http://gitlab.example.com" yum -y install gitlab-ee
 ```
 
-### 4. 访问http://gitlab.example.com，然后就可以注册使用了
+### 4. 访问http://gitlab.example.com(这个地址可以自定义)，然后就可以注册使用了

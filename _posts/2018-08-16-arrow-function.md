@@ -1,3 +1,15 @@
+---
+layout:     post
+title:      箭头函数arrow function
+subtitle:   
+date:       2018-8-17
+author:     wengfan
+header-img: img/post-bg-hacker.jpg
+catalog: true
+tags:
+    - es6
+    - 笔记
+---
 # ES6之箭头函数
 
 ### 1.箭头函数有花括号{}与没有的区别
