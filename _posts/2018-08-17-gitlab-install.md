@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      centos部署gitlab
+title:      gitlab部署
 subtitle:   
 date:       2018-8-17
 author:     wengfan
@@ -40,7 +40,8 @@ tags:
     sudo chkconfig postfix on
 ```
 
-1. 添加包gitlab软件包并安装
+2. 添加包gitlab软件包并安装
+
 ```
     curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash
 ```
