@@ -17,11 +17,12 @@ tags:
 ### 2. 起步
 
 首先,我们从网络下载nginx压缩包
-1. ngnix-1.12.2.tar.gz复制到opt/soft
-2. tar  -zxvf ngnix-1.12.2.tar.gz
+1) ngnix-1.12.2.tar.gz复制到opt/soft
+2) tar  -zxvf ngnix-1.12.2.tar.gz
 
 ##### 安装nginx
-1、安装prce(重定向支持)和openssl(https支持，如果不需要https可以不安装。)
+
+1. 安装prce(重定向支持)和openssl(https支持，如果不需要https可以不安装。)
     - yum -y install pcre*
     - yum -y install openssl*
     - tar  -zxvf ngnix-1.12.2.tar.gz
@@ -38,8 +39,8 @@ tags:
         # centos
         yum -y install openssl openssl-devel
     ```
-3. 打包文件放到: home文件夹下 /home/dist // 前端包位置
-4. 修改nginx配置文件conf/nginx.conf
+2. 打包文件放到: home文件夹下 /home/dist // 前端包位置
+3. 修改nginx配置文件conf/nginx.conf
     ```
         server {
             listen 8080;
@@ -56,7 +57,7 @@ tags:
             # ...
         }
     ```
-5. 启动nginx
+4. 启动nginx
     ```
         nginx -c /opt/soft/nginx-1.11.13/conf/nginx.conf
         ps -ef|grep nginx
@@ -65,9 +66,11 @@ tags:
         or
         kill -QUIT 1011
     ```
-6  提示：nginx nginx command not found
-        https://blog.csdn.net/pythondafahao/article/details/79826290
-        // 修改profile文件
+
+5. 提示：nginx nginx command not found
+    https://blog.csdn.net/pythondafahao/article/details/79826290
+    修改profile文件
+
     ```
         vim /etc/profile
         
@@ -76,7 +79,8 @@ tags:
         source /etc/profile 刷新
         
     ```
- 7  再次启动项目
+
+6. 再次启动项目
     ```
         nginx -c /opt/soft/nginx-1.11.13/conf/nginx.conf
         ps -ef|grep nginx
