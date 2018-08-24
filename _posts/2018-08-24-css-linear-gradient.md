@@ -4,7 +4,7 @@ title:      css实现圆弧渐变效果
 subtitle:   linear-gradient border-radius
 date:       2018-8-16
 author:     wengfan
-header-img: img/post-bg-hacker.jpg
+header-img: img/blog/css/linear-gradient.png
 catalog: true
 tags:
     - css
@@ -13,7 +13,7 @@ tags:
 
 # css实现圆弧渐变效果
 
-![image]](https://ws3.sinaimg.cn/large/006tNbRwgy1fukmat326aj313f02sgm1.jpg)
+![image](https://ws3.sinaimg.cn/large/006tNbRwgy1fukmat326aj313f02sgm1.jpg)
 
 HTML
 ```
