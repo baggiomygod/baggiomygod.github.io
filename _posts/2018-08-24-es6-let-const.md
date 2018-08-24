@@ -1,8 +1,8 @@
 ---
 layout:     post
 title:      ES6之let const
-subtitle:   let const var
-date:       2018-8-16
+subtitle:   let const var 《深入理解ES6》
+date:       2018-8-24
 author:     wengfan
 header-img: img/post-bg-js-version.jpg
 catalog: true
@@ -12,10 +12,10 @@ tags:
     - 笔记
 ---
 
-# es6 let const 相比var的好处
+# es6 let const声明 《深入理解ES6---第一章》
 
 ### 1. 开发中使用var的问题
-1. hosting 变量提升机制（摘自《理解ES6》）
+1. hosting 变量提升机制
     在函数作用于或全局作用域通过```var```关键字声明的变量，无论实际上是在哪里声明的，都会被当成当前作用域顶部声明的变量。
     以下函数举例说明这个问题：
     ```
