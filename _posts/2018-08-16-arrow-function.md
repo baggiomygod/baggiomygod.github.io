@@ -4,7 +4,7 @@ title:      箭头函数arrow function
 subtitle:   
 date:       2018-8-17
 author:     wengfan
-header-img: img/post-bg-hacker.jpg
+header-img: img/post-bg-js-version.jpg
 catalog: true
 tags:
     - es6

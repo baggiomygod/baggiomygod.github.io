@@ -1,4 +1,3 @@
-
 ---
 layout:     post
 title:      安装mongodb(linux)
@@ -9,7 +8,7 @@ header-img: img/post-bg-unix-linux.jpg
 catalog: true
 tags:
     - linux
-    - - mongodb
+    - mongodb
 ---
 
 # 安装mongodb(linux)

@@ -4,7 +4,7 @@ title:      react父组件调用子组件方法
 subtitle:   react组件通信
 date:       2018-8-16
 author:     wengfan
-header-img: img/post-bg-hacker.jpg
+header-img: img/post-bg-re-vs-ng2.jpg
 catalog: true
 tags:
     - react
@@ -12,3 +12,4 @@ tags:
 ---
 
 # react父组件调用子组件方法
+
