@@ -4,7 +4,7 @@ title:      es6之let const
 subtitle:   let const var
 date:       2018-8-16
 author:     wengfan
-header-img: img/post-bg-hacker.jpg
+header-img: img/post-bg-debug.jpg
 catalog: true
 tags:
     - es6

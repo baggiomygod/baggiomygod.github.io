@@ -46,7 +46,7 @@ tags:
     fork=true
     journal=false
     storageEngine=mmapv1
-``
+```
 
 6. 启动mongodb
 在bin目录下
