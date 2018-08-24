@@ -1,10 +1,10 @@
 ---
 layout:     post
 title:      css实现圆弧渐变效果
-subtitle:   linear-gradient border-radius
+subtitle:   向两边出现消失的渐变效果
 date:       2018-8-16
 author:     wengfan
-header-img: img/blog/css/linear-gradient.png
+header-img: img/post-bg-css.jpeg
 catalog: true
 tags:
     - css
@@ -12,7 +12,9 @@ tags:
 ---
 
 # css实现圆弧渐变效果
+css使用linear-griadient和border-radius实现向两边出现消失的渐变效果
 
+效果展示：
 ![image](https://ws3.sinaimg.cn/large/006tNbRwgy1fukmat326aj313f02sgm1.jpg)
 
 HTML
