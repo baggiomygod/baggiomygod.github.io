@@ -2,7 +2,7 @@
 layout:     post
 title:      typescript之接口
 subtitle:   官方文档 笔记
-date:       2018-8-256
+date:       2018-8-26
 author:     wengfan
 header-img: img/post-bg-ts.png
 catalog: true
