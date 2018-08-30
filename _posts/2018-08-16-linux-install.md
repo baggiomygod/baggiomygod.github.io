@@ -27,6 +27,7 @@ tags:
         - yum -y install pcre*
         - yum -y install openssl*
         - tar  -zxvf ngnix-1.12.2.tar.gz
+        - cd ngnix-1.12.2
         - ./configure --prefix=/usr/local/nginx（必须先建好目录)
         - make 
         - make install （这步报错了：(error: make *** No rule to make target 'build', need by 'default' stop) ，但是没有影响后面）
