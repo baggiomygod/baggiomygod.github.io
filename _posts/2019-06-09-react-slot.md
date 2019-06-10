@@ -2,7 +2,7 @@
 layout:     post
 title:      react实现插槽slot
 subtitle:   react 插槽
-date:       2019-06-09
+date:       2019-6-9
 author:     wengfan
 header-img: img/post-bg-re-vs-ng2.jpg
 catalog: true

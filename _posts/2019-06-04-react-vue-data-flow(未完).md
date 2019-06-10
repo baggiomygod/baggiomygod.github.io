@@ -2,7 +2,7 @@
 layout:     post
 title:      vue react数据流区别
 subtitle:   
-date:       2019-06-04
+date:       2019-6-4
 author:     wengfan
 header-img: img/post-bg-re-vs-ng2.jpg
 catalog: true

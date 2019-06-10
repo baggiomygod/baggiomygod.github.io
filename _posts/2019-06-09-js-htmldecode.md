@@ -2,7 +2,7 @@
 layout:     post
 title:      js反转义特殊符号
 subtitle:   
-date:       2019-06-09
+date:       2019-6-9
 author:     wengfan
 header-img: img/post-bg-keybord.jpg
 catalog: true

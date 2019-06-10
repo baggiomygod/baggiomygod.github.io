@@ -2,7 +2,7 @@
 layout:     post
 title:      import和require的区别
 subtitle:   import require
-date:       2019-06-06
+date:       2019-6-6
 author:     wengfan
 header-img: img/post-bg-keybord.jpg
 catalog: true

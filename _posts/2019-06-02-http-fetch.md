@@ -2,7 +2,7 @@
 layout:     post
 title:      fetch
 subtitle:   fetch
-date:       2019-06-02
+date:       2019-6-2
 author:     wengfan
 header-img: img/post-bg-keybord.jpg
 catalog: true

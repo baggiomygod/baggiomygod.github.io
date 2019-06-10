@@ -1,9 +1,9 @@
 
 ---
 layout:     post
-title:      react 生命走起
+title:      react 生命周期
 subtitle:   react
-date:       2019-06-03
+date:       2019-6-3
 author:     wengfan
 header-img: img/post-bg-keybord.jpg
 catalog: true

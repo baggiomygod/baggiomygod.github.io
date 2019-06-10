@@ -2,7 +2,7 @@
 layout:     post
 title:      react setState理解
 subtitle:   react
-date:       2019-06-03
+date:       2019-6-3
 author:     wengfan
 header-img: img/post-bg-keybord.jpg
 catalog: true
