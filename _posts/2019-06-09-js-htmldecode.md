@@ -11,10 +11,11 @@ tags:
     - 笔记
 ---
 
-# js转义和反转义特殊符号的方法（未完）
+# js转义和反转义特殊符号的方法
 
 开发中我们经常会遇到后端返回转义之后的字符串, 如：
-```content: "&lt;script&gt;alert(1)&lt;/script&gt;"
+```
+    content: "&lt;script&gt;alert(1)&lt;/script&gt;"
 ```
 
 这样如果不经过转义直接显示会有问题，此时就需要我们手动对其进行转义。
