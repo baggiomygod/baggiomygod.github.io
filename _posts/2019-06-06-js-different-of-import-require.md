@@ -54,8 +54,43 @@ tags:
 1. 通过require引入基础数据类型时，属于复制该变量
 2. 通过reqire引入复杂数据类型，数据浅拷贝该对象
 3. 出现模块之间循环引用时，会输出已经执行的模块，而未执行的模块不输出
-4. CommonJs模块默认export的时一个对象，即导出的时基础数据类型
+4. CommonJs模块默认export的是一个对象，即导出的是基础数据类型
 
 ## 总结
 - requre: 运行时加载，CommonJs/AMD规范；社区方案，提供了服务器、浏览器的模块加载方案。只能在运行时确定模块的依赖关系及输入和输出的变量,无法进行静态优化。
 - import: 编译时加载，ES6规范；语言规则层面支持模块功能。支持编译时静态分析，便于JS引入宏和类型检验。动态绑定
+
+# 2. repoire和import的区别 jokcy
+https://segmentfault.com/a/1190000014434944?utm_source=tag-newest
+
+|require|import|
+|-|-|
+|动态评估|静态评估|
+|在运行时报错|在解析时报错|
+|不是关键字|是关键字|
+
+## 加载方式不同
+使用require的时候，其会将module的代码进行包装，变成如下的样子
+```
+    function (exports, require, module, __filename, __dirname) {
+        const m = 1;
+        module.exporta.m = m
+    }
+```
+然后再执行这个方法的时候
+```
+    const module = { exports: {} }
+    const require = function () {/* some module load code here */}
+    fun(module.exports, require, module, __filename, dirname)
+```
+执行完成之后，就嫩而过通过module拿到方法中向外抛出的变量
+
+所以我们可以看到，module， require, exports都不是全局变量，而是专门为这个模块使用的局部变量
+
+require的时候真正做的事情如下：
+1. 解析路径 resolution
+2. 加载代码 loading
+3. 包装 wrapping
+4. 评估执行 evalation
+5. 缓存 caching
+
