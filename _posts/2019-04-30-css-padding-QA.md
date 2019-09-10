@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      css padding-right无效问题
-subtitle:   
+subtitle:   padding
 date:       2018-4-40
 author:     wengfan
 header-img: img/post-bg-debug.png
