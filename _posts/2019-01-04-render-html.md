@@ -11,7 +11,7 @@ tags:
     - html
 ---
 
-# react 转换html字符串为html元素,并处理\t
+# react 转换html字符串为html元素,并处理'\t'
 
 后台返回html字符串时，如果前端不做处理会显示标签字符串
 <p>文字...</p>

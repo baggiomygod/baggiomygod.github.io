@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      import 和 import * as 引入区别
-subtitle:   
+subtitle:   es6 module
 date:       2019-7-9
 author:     wengfan
 header-img: img/post-bg-js-version.jpg

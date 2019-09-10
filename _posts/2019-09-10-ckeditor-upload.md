@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      ckeditor实现图片上传七牛云
-subtitle:   
+subtitle:   ckeditor qiniu
 date:       2019-09-10
 author:     wengfan
 header-img: img/post-bg-debug.png
