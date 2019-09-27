@@ -2,7 +2,7 @@
 layout:     post
 title:      css padding-right无效问题
 subtitle:   padding
-date:       2018-4-40
+date:       2019-04-30
 author:     wengfan
 header-img: img/post-bg-debug.png
 catalog: true
