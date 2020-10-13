@@ -11,7 +11,9 @@ tags:
 ---
 
 # 基础知识
+
 https://ethfans.org/posts/blockchain-developer-crash-course
+
 ## 名词定义
 
 - 区块链： 是一条由区块链接而成的数据链，在区块中包含具体数据，并且整个系统没有中心化监管。区块链具有加密安全，不可篡改的特点
