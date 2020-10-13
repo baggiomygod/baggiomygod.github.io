@@ -4,7 +4,7 @@ title:      区块链基础知识1-哈希、共识、P2P网络、非对称加密
 subtitle:   
 date:       2020-10-13
 author:     wengfan
-header-img: img/block_chain_bg.jpg.jpg
+header-img: img/blockchain-bg.jpg
 catalog: true
 tags:
     - 区块链
