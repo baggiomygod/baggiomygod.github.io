@@ -1,0 +1,25 @@
+mac 数据迁移
+Npm安装过的包
+```
+rbaggio:~ wengf$ npm list -g --depth 0
+/usr/local/lib
+├── @angular/cli@6.0.8
+├── @nestjs/cli@5.3.0
+├── @vue/cli@3.0.0-rc.3
+├── anywhere@1.5.0
+├── create-react-app@1.5.2
+├── ffmpeg@0.0.4
+├── fui-cli@1.1.1
+├── grunt@1.0.3
+├── hexo-cli@1.1.0
+├── ipst-cli@1.0.2
+├── n@2.1.8
+├── node-sass@2.1.1
+├── nodeserver@0.9.1
+├── npm@6.14.4
+├── pm2@3.0.0
+├── typescript@2.9.2
+├── vue-cli@2.9.6
+├── webdir@0.5.1
+├── yarn@1.7.0
+```
